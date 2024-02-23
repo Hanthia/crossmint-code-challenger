@@ -1,0 +1,7 @@
+
+<div class="megaverse-row">
+  <div *ngFor="let row of megaverse">
+    <span *ngFor="let cell of row" [innerHTML]="cell | convertToIcon"></span>
+    <br />
+  </div>
+</div>

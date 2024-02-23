@@ -1,0 +1,30 @@
+<section class="container--header">
+  <header class="header--description">
+    <div class="title--description">
+      <h1>Hanthia megaverse Coding Challenge</h1>
+    </div>
+  </header>
+</section>
+<section class="container--form">
+  <label>Example megaverse: </label>
+  <br />
+  <app-megaverse [megaverse]="megaverse"></app-megaverse>
+  <form (submit)="$event.preventDefault()">
+    <div class="form-description-div">
+      <div class="form--labels">
+        <label>
+          Interact with the API and create some 🪐POLYanets and validate them.
+        </label>
+        <br />
+        <label
+          >Click the create button to recreate the requested megaverse
+          example.</label
+        >
+      </div>
+      <div class="div--buttons">
+        <button class="btn btn-create" (click)="actionCreate()">Create</button>
+        <button class="btn btn-reset" (click)="actionReset()">Reset</button>
+      </div>
+    </div>
+  </form>
+</section>
